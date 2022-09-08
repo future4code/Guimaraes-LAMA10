@@ -3,7 +3,7 @@ import { User } from "../model/User";
 
 export class UserDatabase extends BaseDatabase {
 
-  private static TABLE_NAME = "LAMA_USUÁRIOS";
+  private static TABLE_NAME = "LAMA_USUARIOS";
 
   public async createUser(
     id: string,
@@ -25,7 +25,7 @@ export class UserDatabase extends BaseDatabase {
     } catch (error: any) {
       throw new Error(error.sqlMessage || error.message);
     }
-  }
+  };
 
   public async getUserByEmail(email: string): Promise<User> {
     const result = await this.getConnection()
@@ -34,6 +34,6 @@ export class UserDatabase extends BaseDatabase {
       .where({ email });
 
     return User.toUserModel(result[0]);
-  }
+  };
 
 }
