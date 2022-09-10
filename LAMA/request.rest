@@ -2,11 +2,11 @@ POST http://localhost:3000/user/signup
 Content-Type: application/json
 
 {
-    "email": "miguel@miguel.com",
-    "name": "miguel",
-    "password": "admin" ,
-    "role": "ADMIN"
-};
+    "email": "gaby@email.com",
+    "name": "Gabriele" ,
+    "password": "gaby123",
+    "role": "usuario"
+}
 
 ###
 
