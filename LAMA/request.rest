@@ -45,10 +45,10 @@ POST http://localhost:3000/show/insert
  Content-Type: application/json
 
  {
-    "week_day": "sexta",
-    "start_time": 12,
-    "end_time": 13,
-    "band_id": "97fa2120-e609-44f4-92c5-9498a3edbed5"
+    "week_day": "sabado",
+    "start_time": 14,
+    "end_time": 16,
+    "band_id": "4e0c4e76-4ac5-4142-b14c-0654aa50fb56"
  }
 
  ###
