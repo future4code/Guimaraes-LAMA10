@@ -12,7 +12,7 @@ export class UserController {
                 password: req.body.password,
                 role: req.body.role.toUpperCase()
             }
-
+            
             const userBusiness = new UserBusiness();
             const token = await userBusiness.createUser(input);
             res.status(200).send({ token });

@@ -1,5 +1,5 @@
 import { ShowBusiness } from "../business/ShowBusiness";
-import { ShowInputDTO } from "../model/Shows";
+import { ShowDays, ShowInputDTO } from "../model/Shows";
 import { Request, Response } from "express";
 
 export class ShowController {
@@ -11,7 +11,8 @@ export class ShowController {
 
     public createShow = async (req: Request, res: Response): Promise<void> => {
         try {
-            const { week_day, start_time, end_time, band_id } = req.body;
+            const week_day = req.body.week_day.toUpperCase()
+            const {  start_time, end_time, band_id } = req.body;
             const token = req.headers.authorization as string;
             const show: ShowInputDTO = { week_day, start_time, end_time, band_id };
 
