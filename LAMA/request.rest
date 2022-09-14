@@ -1,12 +1,14 @@
+//Endpoints de Usuários
+
 POST http://localhost:3000/user/signup
 Content-Type: application/json
 
 {
-    "email": "miguel@miguel.com",
-    "name": "miguel",
-    "password": "admin" ,
-    "role": "ADMIN"
-};
+    "email": "gaby@email.com",
+    "name": "Gabriele" ,
+    "password": "gaby123",
+    "role": "usuario"
+}
 
 ###
 
@@ -18,9 +20,11 @@ Content-Type: application/json
     "password": "admin"
 }
 
+//Endpoints de Bandas
+
 ###
  POST http://localhost:3000/band/insert
- Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImEyYWFhNTliLWUxMDEtNGRlZC04Y2FiLThjMWYzODY2YWE3YiIsInJvbGUiOiJBRE1JTiIsImlhdCI6MTY2MjU5NjA3NywiZXhwIjoxNjYyNjE0MDc3fQ.rPV2Pke44a5Dp62j_q-OMK4FbevVuCmuecNIFuhpoUI
+ Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjE4N2U4YWY1LWZhYmYtNGI2MC1hY2E4LTkwYmE3MzVmZDcwZSIsInJvbGUiOiJBRE1JTiIsImlhdCI6MTY2Mjc3NzI4NCwiZXhwIjoxNjYyNzk1Mjg0fQ.kLmxWW_TuPYeHoa18HJxGWdUbzzlXoOFfG1_0RlPbzU
  Content-Type: application/json
 
  {
@@ -33,3 +37,18 @@ Content-Type: application/json
  GET http://localhost:3000/band/4e0c4e76-4ac5-4142-b14c-0654aa50fb56
 
 ###
+
+// Endpoints de Shows
+
+POST http://localhost:3000/show/insert
+ Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjE4N2U4YWY1LWZhYmYtNGI2MC1hY2E4LTkwYmE3MzVmZDcwZSIsInJvbGUiOiJBRE1JTiIsImlhdCI6MTY2Mjc3NzI4NCwiZXhwIjoxNjYyNzk1Mjg0fQ.kLmxWW_TuPYeHoa18HJxGWdUbzzlXoOFfG1_0RlPbzU
+ Content-Type: application/json
+
+ {
+    "week_day": "sexta",
+    "start_time": 12,
+    "end_time": 13,
+    "band_id": "97fa2120-e609-44f4-92c5-9498a3edbed5"
+ }
+
+ ###
